@@ -32,8 +32,16 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="sjI-qo-AWJ">
-                        <barButtonItem key="leftBarButtonItem" title="Zoom" id="fW7-eq-hFs"/>
-                        <barButtonItem key="rightBarButtonItem" title="Search" id="ygV-av-3DP"/>
+                        <barButtonItem key="leftBarButtonItem" title="Zoom" id="fW7-eq-hFs">
+                            <connections>
+                                <action selector="zoomButtonTapped:" destination="BYZ-38-t0r" id="MH7-A8-bhM"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="search" id="ygV-av-3DP">
+                            <connections>
+                                <action selector="searchButtonTapped:" destination="BYZ-38-t0r" id="h3w-jj-MmV"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="mapView" destination="8Ot-e5-orO" id="LKe-ga-PC2"/>
